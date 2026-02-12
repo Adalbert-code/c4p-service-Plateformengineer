@@ -1,0 +1,402 @@
+{
+    "item": [
+        {
+            "name": "proposals",
+            "description": "",
+            "item": [
+                {
+                    "id": "940fc657-1a62-4ab8-828a-046c83503d0f",
+                    "name": "Decide a proposal",
+                    "request": {
+                        "name": "Decide a proposal",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "proposals",
+                                ":proposalId",
+                                "decide",
+                                ""
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "value": "nulla cupidatat",
+                                    "key": "proposalId",
+                                    "disabled": false,
+                                    "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                    }
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"approved\": false\n}",
+                            "options": {
+                                "raw": {
+                                    "headerFamily": "json",
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "2c216682-d7ac-49bd-b685-d2c183cf8eeb",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "proposals",
+                                        ":proposalId",
+                                        "decide",
+                                        ""
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"approved\": false\n}",
+                                    "options": {
+                                        "raw": {
+                                            "headerFamily": "json",
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [],
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "ed01ec56-5974-4b56-bcd1-af0627083f8a",
+                    "name": "Create a Proposal",
+                    "request": {
+                        "name": "Create a Proposal",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "proposals",
+                                ""
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "body": {},
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "6fb10606-8b70-49cd-a11b-cce4a261013a",
+                            "name": "CREATED",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "proposals",
+                                        ""
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "POST",
+                                "body": {}
+                            },
+                            "status": "Created",
+                            "code": 201,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "e2e97ee1-eff9-495d-a3f6-4a344ad3b48a",
+                    "name": "Get all Proposals",
+                    "request": {
+                        "name": "Get all Proposals",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "proposals",
+                                ""
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {},
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "f44cb242-ce85-4f82-b5d5-25203eb5f1e8",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "proposals",
+                                        ""
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"id\": \"ullamco nisi\",\n    \"title\": \"dolor quis \",\n    \"description\": \"labore sed dolore\",\n    \"author\": \"velit\",\n    \"email\": \"eiusmod\",\n    \"approved\": false,\n    \"status\": {\n      \"status\": \"non\"\n    }\n  },\n  {\n    \"id\": \"fugiat reprehenderit\",\n    \"title\": \"ex sunt\",\n    \"description\": \"adipisicing do voluptate mollit minim\",\n    \"author\": \"Lorem anim\",\n    \"email\": \"deserunt ullamco\",\n    \"approved\": true,\n    \"status\": {\n      \"status\": \"incididunt\"\n    }\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "59381ddc-b5ea-4058-9173-7c6e683f8b3b",
+                    "name": "Delete a proposal",
+                    "request": {
+                        "name": "Delete a proposal",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "proposals",
+                                ":proposalId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "value": "nulla cupidatat",
+                                    "key": "proposalId",
+                                    "disabled": false,
+                                    "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                    }
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {},
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "15a0de29-6b41-4775-af9f-c505ed528f12",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "proposals",
+                                        ":proposalId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [],
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "service",
+            "description": "",
+            "item": [
+                {
+                    "id": "d1be7cbe-e446-453d-a3f9-a1498e1f33aa",
+                    "name": "Get Service Info",
+                    "request": {
+                        "name": "Get Service Info",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "service",
+                                "info"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {},
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "9a809283-a196-4005-8abf-1c5fa4722b84",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "service",
+                                        "info"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"name\": \"labore Excepteur\",\n  \"version\": \"laborum dolore in sunt eiusmod\",\n  \"source\": \"incididunt dolore dolore\",\n  \"podId\": \"irure \",\n  \"podNamespace\": \"est nostrud qui in\",\n  \"podNodeName\": \"amet aliqua pariatur sunt\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ]
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:8080"
+        }
+    ],
+    "info": {
+        "_postman_id": "89df15c7-d495-4d4d-a5bf-10ebab874710",
+        "name": "Agenda Service",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "Agenda Service\n\nContact Support:\n Name: Mauricio Salatino\n Email: salaboy@salaboy.com",
+            "type": "text/plain"
+        }
+    }
+}

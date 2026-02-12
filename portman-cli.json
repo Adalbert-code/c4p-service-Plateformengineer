@@ -1,0 +1,68 @@
+{
+  "version": 1.0,
+  "assignVariables": [
+    {
+      "openApiOperation": "POST::/proposals/",
+      "collectionVariables": [
+        {
+          "responseBodyProp": "id",
+          "name": "proposalId"
+        }
+      ]
+    }
+  ],
+  "overwrites": [
+    {
+      "openApiOperation": "POST::/proposals/",
+      "overwriteRequestBody": [
+        {
+          "key": "title",
+          "value": "Test Proposal",
+          "overwrite": true
+        },
+        {
+          "key": "description",
+          "value": "Test Description",
+          "overwrite": true
+        },
+        {
+          "key": "author",
+          "value": "Test Author",
+          "overwrite": true
+        },
+        {
+          "key": "email",
+          "value": "test@example.com",
+          "overwrite": true
+        }
+      ]
+    },
+    {
+      "openApiOperation": "POST::/proposals/{proposalId}/decide/",
+      "overwriteRequestPathVariables": [
+        {
+          "key": "proposalId",
+          "value": "{{proposalId}}",
+          "overwrite": true
+        }
+      ],
+      "overwriteRequestBody": [
+        {
+          "key": "approved",
+          "value": true,
+          "overwrite": true
+        }
+      ]
+    },
+    {
+      "openApiOperation": "DELETE::/proposals/{proposalId}",
+      "overwriteRequestPathVariables": [
+        {
+          "key": "proposalId",
+          "value": "{{proposalId}}",
+          "overwrite": true
+        }
+      ]
+    }
+  ]
+}
